@@ -1,3 +1,4 @@
+from tabnanny import verbose
 from django.db import models
 
 class Autor(models.Model):
@@ -5,3 +6,7 @@ class Autor(models.Model):
     email = models.EmailField(max_length=100, blank=True, null=True)
     def __str__(self):
         return f'{self.nome} - {self.email}'
+    
+    class Meta:
+        verbose_name = "autor"
+        verbose_name_plural = "autores"
