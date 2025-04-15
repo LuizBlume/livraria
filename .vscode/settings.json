@@ -6,6 +6,6 @@
   "python.analysis.autoImportCompletions": true,
   "peacock.color": "#007fff",
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "ms-python.black-formatter"
   }
 }
