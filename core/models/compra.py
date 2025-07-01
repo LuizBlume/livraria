@@ -11,3 +11,6 @@ class Compra(models.Model):
     
     usuario = models.ForeignKey(User, on_delete=models.PROTECT, related_name="Compras")
     status = models.IntegerField(choices=StatusCompra.choices, default=StatusCompra.CARRINHO)
+    
+    def __str__(self):
+        return f'({self.id} {self.usuario} - {self.status})'

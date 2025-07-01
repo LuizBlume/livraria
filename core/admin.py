@@ -84,5 +84,6 @@ class LivroAdmin(admin.ModelAdmin):
     
 @admin.register(Compra)
 class CompraAdmin(admin.ModelAdmin):
+    list_display = ('usuario', 'status')
     ordering = ('usuario', 'status')
     list_per_page = 10
