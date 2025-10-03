@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
-from drf_spetacular.utils import extend_schema
+from drf_spectacular.utils import extend_schema
 
 from core.models import Livro
 from core.serializers import (
