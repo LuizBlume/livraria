@@ -29,7 +29,7 @@ class Compra(models.Model):
 
     @property
     def total(self):
-        return sum(item.livro.preco * item.quantidade for item in self.itens.all())
+        return sum(item.preco * item.quantidade for item in self.itens.all())
     
     tipo_pagamento = models.IntegerField(
         choices=TipoPagamento.choices,
